@@ -13,7 +13,7 @@ class Room
   def add_song(song)
     @playlist << song
     favourite_songs = @guests.map {|guest| guest.favourite_song}
-    return "Woohoo!" if favourite_songs.include? song.title
+    return "Woohoo!" if favourite_songs.include? song
   end
 
   def guest_count

@@ -10,8 +10,8 @@ class TestRoom < Minitest::Test
     @song1 = Song.new("Agadoo", "Black Lace")
     @song2 = Song.new("Macarena", "Los Del Rio")
 
-    @guest1 = Guest.new("Timmy Test", "Agadoo")
-    @guest2 = Guest.new("Jim Jefferson", "Macarena")
+    @guest1 = Guest.new("Timmy Test", @song1)
+    @guest2 = Guest.new("Jim Jefferson", @song2)
     @guest3 = Guest.new("Alison Abbey", nil)
 
     @room1 = Room.new(2)
